@@ -1,0 +1,146 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #111;
+      color: #f0f0f0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #00ffe1;
+      text-shadow: 0 0 5px #00ffe1;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #000;
+      color: white;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #ffffff;
+      text-shadow: 0 0 5px #fff;
+      letter-spacing: 5px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li {
+      font-weight: 600;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      cursor: pointer;
+      color: #ccc;
+    }
+    nav ul li a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #00ffe1;
+    }
+
+    /* Main container */
+    main {
+      max-width: 850px;
+      margin: 100px auto 40px; /* espaço para header fixo */
+      padding: 0 20px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 60px;
+      background: #1a1a1a;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 6px 20px rgba(0,255,255,0.2);
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    section h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-weight: 700;
+      border-bottom: 3px solid #00ffe1;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+      font-size: 1.8rem;
+      text-shadow: 0 0 5px #00ffe1;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+    ul {
+      list-style: disc inside;
+      color: #ccc;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    footer{
+        text-align: center;
+        margin-top: -35px;
+        color: #888;
+        font-size: 0.9rem;
+        border-top: 1px solid #444;
+    }
+    /* Botão de contato fixo */
+.contact-sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1a1a1a;
+  padding: 15px 10px;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 4px 15px rgba(0,255,255,0.1);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-sidebar a {
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-sidebar a:hover {
+  transform: scale(1.2);
+  color: #00ffe1;
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
